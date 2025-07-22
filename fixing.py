@@ -23,7 +23,7 @@ part_data = product_data[product_data['Nơi bị lỗi'] == part_selected]
 
 # Step 3: Select Error Type
 errors = sorted(part_data['Lỗi'].dropna().unique())
-error_selected = st.selectbox("⚠️ Chọn lỗi")", errors)
+error_selected = st.selectbox("⚠️ Chọn lỗi)", errors)
 
 # Step 4: Show Fixing Method
 fix_data = part_data[part_data['Lỗi'] == error_selected]

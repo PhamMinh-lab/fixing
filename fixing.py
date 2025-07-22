@@ -5,7 +5,7 @@ import pandas as pd
 data = pd.read_excel('Lỗi_Phươngánxửlílỗi.xlsx')  # Replace with your file name
 data = data.applymap(lambda x: x.strip() if isinstance(x, str) else x)  # Remove trailing spaces
 
-st.title("🔍 Error Diagnosis & Fixing Suggestion")
+st.title("Lỗi & Phương án xử lí lỗi")
 
 # Step 1: Select Product
 products = sorted(data['Sản phẩm'].dropna().unique())

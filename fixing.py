@@ -29,6 +29,6 @@ error_selected = st.selectbox("⚠️ Chọn lỗi)", errors)
 fix_data = part_data[part_data['Lỗi'] == error_selected]
 fix_methods = fix_data['Phương án xử lí'].dropna().unique()
 
-st.subheader("🛠️ Suggested Fixing Method(s):")
+st.subheader("🛠️ Phương án xử lí lỗi:")
 for fix in fix_methods:
     st.success(f"✅ {fix}")
